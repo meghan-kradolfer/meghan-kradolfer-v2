@@ -1,0 +1,26 @@
+.home {
+    min-height: 100vh;
+    .container {
+        @include center();
+        opacity: 0;
+        animation: opening 10s linear forwards;
+        animation-delay: 1s;
+        text-align: center;
+
+        h1, h4 {
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            color: $gold;
+        }
+
+        h5 {
+            @include type(14.5rem);
+            display: inline-block;
+            width: 0;
+            max-width: 14.5rem;
+            color: $white;
+        }
+    }
+}

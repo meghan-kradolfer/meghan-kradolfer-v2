@@ -1,0 +1,73 @@
+.navigation {
+
+    .logo-nav {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        stroke: $gold;
+        margin: 1rem 0.5rem;
+
+        .logo {
+            width: 7rem;
+        }
+    }
+
+    .toggle {
+        z-index: 10;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        color: $white;
+        fill: $white;
+
+        svg path {
+            @include transition($time: 0.5s);
+        }
+
+        &.open {
+            fill: $white;
+            svg {
+                path:first-of-type {
+                    transform: translateY(10px);
+                }
+                 path:last-of-type {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+
+        .icon-svg {
+            margin: 2rem 2rem 2rem 1rem;
+        }
+    }
+
+    .menu-nav {
+        @include transition();
+        z-index: 9;
+        position: fixed;
+        top: 0;
+        right: -25vw;
+        height: 100%;;
+        background-color: $gold;
+        width: 25vw;
+        padding: 4rem;
+
+        &.open {
+            right: 0;
+        }
+
+        .nav-item {
+            display: block;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 1.5rem;
+            color: $black;
+            margin: 0;
+            line-height: 1;
+            cursor: pointer;
+        }
+    }
+
+    
+}

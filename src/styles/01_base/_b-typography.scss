@@ -1,0 +1,39 @@
+h1 {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 3rem;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 5px;
+    margin: 0;
+    color: $gold;
+}
+
+h2, h3, h4, h5 {
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 4px;
+    margin:0;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.8;
+
+    b {
+        text-decoration: underline;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}

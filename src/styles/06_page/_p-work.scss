@@ -1,0 +1,20 @@
+.work {
+    .label {
+        @include center();
+        align-items: flex-start;
+
+        &.text-right {
+            align-items: flex-end;
+        }
+
+        h4, p {
+            margin: 0;
+        }
+
+        p {
+            border-right: .15em solid $white;
+            animation: blink-caret .75s step-end infinite;
+            line-height: 1;
+        }
+    }
+}

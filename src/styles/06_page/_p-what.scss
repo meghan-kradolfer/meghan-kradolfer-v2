@@ -1,0 +1,13 @@
+.what {
+    .container {
+        @include center();
+        .skill-icons {
+            .icon-svg {
+                width: 100%;
+                height: auto;
+                opacity: 0.2;
+                padding: 0 2rem 4rem;
+            }
+        }
+    }
+}
