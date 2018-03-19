@@ -2,14 +2,26 @@
     .item {
         @include box-shadow();
         background-color: $white;
-        padding: $spacing-lg;
-        margin: $spacing;
+        padding: 5rem $spacing-lg;
+        margin: -$spacing $spacing $spacing $spacing;
         color: $black;
-        &:nth-child(even) {
+        position: relative;
+        z-index: 9;
+        &.gray {
             background-color: $gray;
-            margin: -$spacing-lg 0 -$spacing-lg -$spacing-lg;
-            width: 80%;
+            margin: -3rem 0 -$spacing-lg -4rem;
+            width: 90%;
+            z-index: 10;
             hr {
+                background-color: $white;
+            }
+        }
+        &.gold {
+            background-color: $gold;
+            margin: -$spacing-lg 0 -$spacing-lg 0;
+            z-index: 8;
+            hr {
+                z-index: 9;
                 background-color: $white;
             }
         }
@@ -20,6 +32,13 @@
             margin: $spacing 0;
             display: block;
             flex: auto;
+        }
+        @media (max-width: $container-width-sm) {
+            &, &.gray, &.gold {
+                margin: $spacing 0 0 0;
+                width: 100%;
+                padding: $spacing-lg;
+            }
         }
     }
 }

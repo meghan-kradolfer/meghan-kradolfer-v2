@@ -7,11 +7,15 @@ html {
 }
 
 body {
-    border: 1rem solid $gold;
+    border: $spacing solid $gold;
+    border-width: $spacing $spacing-sm $spacing $spacing;
     color: $white;
     font-family: $serif;
     font-weight: 300;
     font-size: 16px;
+    @media (max-width: $container-width-md) {
+        border-width: $spacing-sm 0 $spacing-sm $spacing-sm;
+    }
 }
 
 main {
@@ -28,19 +32,24 @@ hr {
     display: none;
 }
 
-.fade-in {
-    animation: fadeIn 5s linear;
+::-webkit-scrollbar {
+    width: $spacing-sm;
 }
 
-.transform-true {
-    margin-top: 64px;
+::-webkit-scrollbar-track {
+    background: $gold;
 }
 
-.fixed {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-    width: 100%;
+::-webkit-scrollbar-thumb {
+    background: $white;
+}
+
+::-moz-selection {
+    color: $black;
+    background: $gold;
+}
+
+::selection {
+    color: $black;
+    background: $gold;
 }

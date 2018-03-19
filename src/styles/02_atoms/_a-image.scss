@@ -7,6 +7,10 @@ img {
     img {
         max-width: 600px;
         position: absolute;
+        @media (max-width: $container-width-md) {
+            width: 100%;
+            position: relative;
+        }
     }
     &~* {
         z-index: 2;

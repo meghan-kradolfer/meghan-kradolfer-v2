@@ -1,0 +1,11 @@
+.social {
+    padding: $spacing 0;
+    .icon-svg {
+        @include transition();
+        fill: $gold;
+        margin: 0 $spacing-lg;
+        &:hover {
+            fill: $white;
+        }
+    }
+}

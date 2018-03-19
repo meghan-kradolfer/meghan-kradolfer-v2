@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import { Link } from 'react-scroll';
+import Fade from 'react-reveal/Fade';
 
-import { select } from '../actions/global/select';
 import Nav from "../components/Nav";
 import Home from "../containers/Home";
 import Who from "../containers/Who";
@@ -12,16 +10,7 @@ import Work from "../containers/Work";
 import Where from "../containers/Where";
 import How from "../containers/How";
 
-function mapStateToProps(state) {
-	return {
-		selected: state.selected
-	};
-}
-
-const propTypes = {
-	select: PropTypes.func,
-	selected: PropTypes.string
-};
+const propTypes = {};
 
 class App extends Component {
 	render() {
@@ -51,9 +40,9 @@ class App extends Component {
 					<Home />
 					<Who />
 					<What />
-					<Work />
-					<Where />
-					<How />
+					<Fade><Work /></Fade>
+					<Fade><Where /></Fade>
+					<Fade><How /></Fade>
 				</main>
 			</div>
 		);
@@ -62,4 +51,4 @@ class App extends Component {
 
 App.propTypes = propTypes;
 
-export default connect(mapStateToProps, { select })(App);
+export default App;

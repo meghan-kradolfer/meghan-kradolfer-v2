@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Zoom from 'react-reveal/Zoom';
+
 import Icon from "../components/Icon";
 
 const propTypes = {};
@@ -16,18 +18,24 @@ class How extends Component {
                             <p>meghan.kradolfer@gmail.com</p>
                             <p>+31630694107</p>
                             <div className="social">
-                                <a href="https://www.facebook.com/meghan.kradolfer" target="_blank" rel="noopener noreferrer">
-                                    <Icon icon="facebook" />
-                                    <span className="hide">facebook</span>
-                                </a>
-                                <a href="https://instagram.com/meghankradolfer/" target="_blank" rel="noopener noreferrer">
-                                    <Icon icon="instagram" />
-                                    <span className="hide">instagram</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/meghan-kradolfer" target="_blank" rel="noopener noreferrer">
-                                    <Icon icon="linkedin" />
-                                    <span className="hide">linkedin</span>
-                                </a>
+                                <Zoom>
+                                    <a href="https://www.facebook.com/meghan.kradolfer" target="_blank" rel="noopener noreferrer">
+                                        <Icon icon="facebook" />
+                                        <span className="hide">facebook</span>
+                                    </a>
+                                </Zoom>
+                                <Zoom>
+                                    <a href="https://instagram.com/meghankradolfer/" target="_blank" rel="noopener noreferrer">
+                                        <Icon icon="instagram" />
+                                        <span className="hide">instagram</span>
+                                    </a>
+                                </Zoom>
+                                <Zoom>
+                                    <a href="https://www.linkedin.com/in/meghan-kradolfer" target="_blank" rel="noopener noreferrer">
+                                        <Icon icon="linkedin" />
+                                        <span className="hide">linkedin</span>
+                                    </a>
+                                </Zoom>
                             </div>
                         </div>
                     </div>

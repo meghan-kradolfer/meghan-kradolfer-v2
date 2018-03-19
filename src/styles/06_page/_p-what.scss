@@ -1,12 +1,11 @@
 .what {
-    .container {
-        .skill-icons {
-            .icon-svg {
-                width: 100%;
-                height: auto;
-                opacity: 0.2;
-                padding: 0 2rem 4rem;
-            }
+    .icon-svg {
+        width: 100%;
+        height: auto;
+        opacity: 0.2;
+        padding: 0 $spacing-lg 4rem;
+        @media (max-width: $container-width-sm) {
+            padding: 0 $spacing-lg;
         }
     }
 }

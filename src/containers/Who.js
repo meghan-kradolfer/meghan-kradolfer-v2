@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 
 const propTypes = {};
 
@@ -9,15 +10,19 @@ class Who extends Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-5 overlay-img">
-							<img src="./images/meghan_kradolfer.png" />
+							<img src="./images/meghan_kradolfer.png" alt="Meghan Nicole Kradolfer - About me" />
 						</div>
 						<div className="col-7">
-							<h5>Who am I?</h5>
-							<h1>About Me</h1>
-							<p>Hello, welcome to my website! I'm Meghan, a developer/designer from <b>Christchurch, New Zealand</b>. <br /><br />
-								I love to create things and development is my output. <br />
-								For the past 5 years I have been working as a Front-end Developer. Working on a range of websites and web-based software.<br />
-								I have created this site to showcase what I love to do and to let you get to know a bit about me!</p>
+							<Fade><h5>Who am I?</h5></Fade>
+							<Fade><h1>About Me</h1></Fade>
+							<Fade>
+								<p>Hello, welcome to my website!  <br />
+									I'm Meghan, a developer/designer from <b>Christchurch, New Zealand</b>. <br /><br />
+									I love to create things and development is my output. <br />
+									For the past 5 years I have been working as a Front-end Developer. Working on a range of websites and web-based software.<br />
+									I have created this site to showcase what I love to do and to let you get to know a bit about me!</p>
+							</Fade>
+
 						</div>
 					</div>
 				</div>

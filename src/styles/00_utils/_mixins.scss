@@ -17,7 +17,7 @@
     transition: $prop $time $animate;
 }
 
-@mixin box-shadow($values: 0.5rem 0.5rem 0.5rem -0.5rem rgba(0,0,0,0.8)) {
+@mixin box-shadow($values: 0.3rem 0.3rem $spacing -0.5rem rgba(0, 0, 0, 0.8)) {
     -webkit-box-shadow: $values;
     -moz-box-shadow: $values;
     box-shadow: $values;
@@ -52,7 +52,7 @@
 @mixin type($width) {
     overflow: hidden;
     border-right: .15em solid $white;
-    white-space: nowrap; 
-    margin: 0 auto; 
+    white-space: nowrap;
+    margin: 0 auto;
     animation: type 8s steps(50, end) 3s forwards, blink-caret .75s step-end infinite;
 }
