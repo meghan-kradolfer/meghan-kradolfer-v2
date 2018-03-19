@@ -13,7 +13,7 @@ class Nav extends React.Component {
         this.state = {
             toggle: false
         };
-      }
+    }
     toggle() {
         this.setState({
             toggle: !this.state.toggle
@@ -22,7 +22,7 @@ class Nav extends React.Component {
     render() {
         return (
             <section className="navigation">
-                <div className={`logo-nav`}>
+                <div className="logo-nav">
                     <Icon icon="logo" className="logo" />
                 </div>
                 <div className={`menu-nav ${this.state.toggle ? 'open' : 'close'}`}>

@@ -13,7 +13,6 @@ class Icon extends React.Component {
         return `icon-svg ${this.props.className || ''}`;
     }
     render() {
-        console.log(this.props.icon);
         return <span
             className={this.className()}
             dangerouslySetInnerHTML={{ __html: iconPaths[this.props.icon] }} />;

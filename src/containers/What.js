@@ -7,7 +7,7 @@ class What extends Component {
 	render() {
 		return (
 			<div id="what" className="what">
-               <div className="container">
+               <div className="container center">
 				<div className="row">
 				<div className="col-5">
 					<div className="row skill-icons">

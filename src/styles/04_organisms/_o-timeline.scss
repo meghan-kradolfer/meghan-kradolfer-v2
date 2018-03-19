@@ -1,0 +1,25 @@
+.timeline {
+    .item {
+        @include box-shadow();
+        background-color: $white;
+        padding: $spacing-lg;
+        margin: $spacing;
+        color: $black;
+        &:nth-child(even) {
+            background-color: $gray;
+            margin: -$spacing-lg 0 -$spacing-lg -$spacing-lg;
+            width: 80%;
+            hr {
+                background-color: $white;
+            }
+        }
+        p {
+            margin: 0;
+        }
+        hr {
+            margin: $spacing 0;
+            display: block;
+            flex: auto;
+        }
+    }
+}

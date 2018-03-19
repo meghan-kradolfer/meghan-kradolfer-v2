@@ -1,57 +1,46 @@
 * {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
+    box-sizing: border-box;
 }
 
 html {
-  background: $gold;
+    background: $gold;
 }
 
 body {
-  border: 1rem solid $gold;
-  color: $white;    
-  font-family: $serif;
-  font-weight: 300;
-  font-size: 16px;
+    border: 1rem solid $gold;
+    color: $white;
+    font-family: $serif;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 main {
-  background: linear-gradient($gray-dark, $black);
+    background: linear-gradient($gray-dark, $black);
 }
 
-img {
-  max-width: 100%;
+hr {
+    height: 1px;
+    background-color: $gray;
+    border: none;
 }
 
-.overlay-img {
-  opacity: 0.3;
-  img {
-      max-width: 600px;
-      position: absolute;
-  }
-  & ~ * {
-
-    z-index: 2;
-  }
+.hide {
+    display: none;
 }
 
 .fade-in {
-  animation: fadeIn 5s linear;
+    animation: fadeIn 5s linear;
 }
 
 .transform-true {
-  margin-top: 64px;
+    margin-top: 64px;
 }
 
 .fixed {
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  width: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    width: 100%;
 }

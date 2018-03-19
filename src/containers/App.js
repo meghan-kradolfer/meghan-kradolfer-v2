@@ -9,6 +9,8 @@ import Home from "../containers/Home";
 import Who from "../containers/Who";
 import What from "../containers/What";
 import Work from "../containers/Work";
+import Where from "../containers/Where";
+import How from "../containers/How";
 
 function mapStateToProps(state) {
 	return {
@@ -30,19 +32,19 @@ class App extends Component {
 						Home
 					</Link>
 					<Link className="nav-item" to="who" spy={true} smooth={true} duration={1000}>
-						Who I am
+						Who
 					</Link>
 					<Link className="nav-item" to="what" spy={true} smooth={true} duration={1000}>
-						What I offer
+						What
 					</Link>
 					<Link className="nav-item" to="work" spy={true} smooth={true} duration={1000}>
-						What I've done
+						Work
 					</Link>
-					<Link className="nav-item" to="what" spy={true} smooth={true} duration={1000}>
-						Where I've been
+					<Link className="nav-item" to="where" spy={true} smooth={true} duration={1000}>
+						Where
 					</Link>
-					<Link className="nav-item" to="what" spy={true} smooth={true} duration={1000}>
-						How to contact
+					<Link className="nav-item" to="how" spy={true} smooth={true} duration={1000}>
+						How
 					</Link>
 				</Nav>
 				<main>
@@ -50,7 +52,9 @@ class App extends Component {
 					<Who />
 					<What />
 					<Work />
-                </main>
+					<Where />
+					<How />
+				</main>
 			</div>
 		);
 	}

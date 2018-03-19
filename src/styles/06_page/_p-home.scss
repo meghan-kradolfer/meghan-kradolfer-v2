@@ -1,7 +1,6 @@
 .home {
     min-height: 100vh;
     .container {
-        @include center();
         opacity: 0;
         animation: opening 10s linear forwards;
         animation-delay: 1s;
