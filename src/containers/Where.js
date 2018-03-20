@@ -20,14 +20,14 @@ class Where extends Component {
 									<div className="row">
 										<div className="col-6">
 											<p><strong>Amsterdam, Netherlands</strong></p>
-											<p>2017 - 2018</p>
+											<p>2017 - current</p>
 										</div>
 										<div className="col-6 text-right">
 											<p><strong>Front-end Developer</strong></p>
 										</div>
 										<hr />
 									</div>
-									<p>I am currently working as a Web Developer for Woof Creative. My role in this position is mainly focused on front-end construction and updates of clients websites. However the job also includes a lot of back-end debugging and database work.</p>
+									<p>I am currently working as a Front-end Developer for Buzzcapture/Obi4wan. In this job I am part of a larger team of developers that work on an online software for brand monitoring. My role involves the implementation of new features and constantly updating the user experience of the software.</p>
 								</div>
 							</Zoom>
 							<Zoom>
@@ -42,7 +42,7 @@ class Where extends Component {
 										</div>
 										<hr />
 									</div>
-									<p>I am currently working as a Web Developer for Woof Creative. My role in this position is mainly focused on front-end construction and updates of clients websites. However the job also includes a lot of back-end debugging and database work.</p>
+									<p>My role in this position was focused on the construction and updating of clients websites. I worked on a range of different websites for multiple different industries. The job also included a lot of back-end debugging and database work, which helped strengthen my knowledge of back-end development.</p>
 								</div>
 							</Zoom>
 							<Zoom>
