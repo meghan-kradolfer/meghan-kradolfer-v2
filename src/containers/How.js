@@ -15,7 +15,7 @@ class How extends Component {
                             <h5>How to contact me?</h5>
                             <h1>Get in touch</h1>
                             <p>I am currently located in the Netherlands <br /> but wherever you are in the world feel free to drop me a line.</p>
-                            <p>meghan.kradolfer@gmail.com</p>
+                            <p><a href="mailto: &#109;&#101;&#103;&#104;&#097;&#110;&#046;&#107;&#114;&#097;&#100;&#111;&#108;&#102;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;?subject=Enquiry from website">&#109;&#101;&#103;&#104;&#097;&#110;&#046;&#107;&#114;&#097;&#100;&#111;&#108;&#102;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
                             <p>+31630694107</p>
                             <div className="social">
                                 <Zoom>
