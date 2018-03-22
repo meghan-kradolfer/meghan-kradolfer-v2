@@ -38,4 +38,7 @@ p {
 
 .text-right {
     text-align: right;
+    @media (max-width: $container-width-sm) {
+        text-align: center;
+    }
 }

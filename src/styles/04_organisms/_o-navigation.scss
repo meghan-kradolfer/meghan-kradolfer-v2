@@ -6,6 +6,7 @@
         left: $spacing;
         stroke: $gold;
         @media (max-width: $container-width-md) {
+            @include box-shadow();
             top: 0;
             left: 0;
             background: $gold;
@@ -27,6 +28,7 @@
         color: $white;
         fill: $white;
         @media (max-width: $container-width-md) {
+            @include box-shadow();
             top: 0;
             right: 0;
             background: $gold;
