@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import Zoom from 'react-reveal/Zoom';
+import ReactGA from 'react-ga';
 
 import Icon from "../components/Icon";
 
 const propTypes = {};
 
 class How extends Component {
+    onSocialLink(social) {
+        ReactGA.event({
+			category: 'Social Media Links',
+			action: 'Clicked',
+			label: social
+		});
+    }
     render() {
         return (
             <div id="how" className="how">
@@ -19,19 +27,19 @@ class How extends Component {
                             <p>+31630694107</p>
                             <div className="social">
                                 <Zoom>
-                                    <a href="https://www.facebook.com/meghan.kradolfer" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.facebook.com/meghan.kradolfer" target="_blank" rel="noopener noreferrer" onClick={() => this.onSocialLink('facebook')}>
                                         <Icon icon="facebook" />
                                         <span className="hide">facebook</span>
                                     </a>
                                 </Zoom>
                                 <Zoom>
-                                    <a href="https://instagram.com/meghankradolfer/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://instagram.com/meghankradolfer/" target="_blank" rel="noopener noreferrer" onClick={() => this.onSocialLink('instagram')}>
                                         <Icon icon="instagram" />
                                         <span className="hide">instagram</span>
                                     </a>
                                 </Zoom>
                                 <Zoom>
-                                    <a href="https://www.linkedin.com/in/meghan-kradolfer" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.linkedin.com/in/meghan-kradolfer" target="_blank" rel="noopener noreferrer" onClick={() => this.onSocialLink('linkedin')}>
                                         <Icon icon="linkedin" />
                                         <span className="hide">linkedin</span>
                                     </a>

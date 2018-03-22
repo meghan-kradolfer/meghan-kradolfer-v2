@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from "./Icon";
+import ReactGA from 'react-ga';
 
 const propTypes = {
     children: PropTypes.any
@@ -15,9 +16,14 @@ class Nav extends React.Component {
         };
     }
     toggle() {
-        this.setState({
-            toggle: !this.state.toggle
-        })
+        if(!this.state.toggle) {
+            ReactGA.event({
+                category: 'Button Links',
+                action: 'Clicked',
+                label: 'Navigation'
+              });
+        }
+        this.setState({toggle: !this.state.toggle})
     }
     render() {
         return (
