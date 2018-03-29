@@ -2,6 +2,7 @@
     padding: $spacing 0;
     .icon-svg {
         @include transition();
+        display: inline-block;
         fill: $gold;
         margin: 0 $spacing-lg;
         &:hover {

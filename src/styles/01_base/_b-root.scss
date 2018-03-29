@@ -13,6 +13,7 @@ body {
     font-family: $serif;
     font-weight: 300;
     font-size: 16px;
+    max-width: calc(100vw - 0.5rem);
     @media (max-width: $container-width-md) {
         border-width: $spacing-sm 0 $spacing-sm $spacing-sm;
     }

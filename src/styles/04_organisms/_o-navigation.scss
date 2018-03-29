@@ -1,43 +1,38 @@
 .navigation {
-    .logo-nav {
+    .logo-nav, .toggle {
+        cursor: pointer;
         z-index: 20;
         position: fixed;
         top: $spacing;
+        padding: $spacing;
+        @media (max-width: $container-width-md) {
+            @include box-shadow();
+            background: $white;
+            padding: $spacing-sm;
+        }
+    }
+    .logo-nav {
         left: $spacing;
         stroke: $gold;
         @media (max-width: $container-width-md) {
-            @include box-shadow();
-            top: 0;
             left: 0;
-            background: $gold;
-            .logo {
-                stroke: $white;
+            svg {
+                width: 5rem;
             }
-        }
-        .logo {
-            width: 7rem;
-            margin-top: 5px;
         }
     }
     .toggle {
-        z-index: 20;
-        position: fixed;
-        top: $spacing;
         right: $spacing;
-        cursor: pointer;
-        color: $white;
         fill: $white;
         @media (max-width: $container-width-md) {
-            @include box-shadow();
-            top: 0;
             right: 0;
-            background: $gold;
+            fill: $gold;
         }
         svg path {
             @include transition($time: 0.5s);
         }
         &.open {
-            fill: $white;
+            fill: $gold;
             svg {
                 path:first-of-type {
                     transform: translateY(10px);
@@ -46,9 +41,6 @@
                     transform: translateY(-10px);
                 }
             }
-        }
-        .icon-svg {
-            margin: $spacing;
         }
     }
     .menu-nav {
@@ -60,6 +52,10 @@
         width: 25rem;
         height: 100%;
         background-color: $gold;
+        @media (max-width: $container-width-sm) {
+            width: 100vw;
+            right: -100vw;
+        }
         &.open {
             right: 0;
         }
@@ -67,7 +63,6 @@
             display: block;
             text-align: center;
             font-size: 1.5rem;
-            font-weight: bold;
             color: $black;
             margin: 0;
             line-height: 16.7vh;

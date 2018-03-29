@@ -16,26 +16,26 @@ class Work extends Component {
                     </div>
                     <div className="row">
                         <div className="col-6">
-                            <img src="./images/clients/abchomes.png" alt="Meghan Nicole Kradolfer - My work" />
+                            <img src="./images/clients/abchomes.png" alt="Meghan Nicole Kradolfer - Front-end developer" />
                         </div>
                         <div className="col-6">
-                            <img src="./images/clients/heartridge.png" alt="Meghan Nicole Kradolfer - My work" />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-6">
-                            <img src="./images/clients/manager.png" alt="Meghan Nicole Kradolfer - My work" />
-                        </div>
-                        <div className="col-6">
-                            <img src="./images/clients/masterpiece.png" alt="Meghan Nicole Kradolfer - My work" />
+                            <img src="./images/clients/heartridge.png" alt="Meghan Nicole Kradolfer - Front-end developer" />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-6">
-                            <img src="./images/clients/simonds.png" alt="Meghan Nicole Kradolfer - My work" />
+                            <img src="./images/clients/manager.png" alt="Meghan Nicole Kradolfer - Front-end developer" />
                         </div>
                         <div className="col-6">
-                            <img src="./images/clients/springfox.png" alt="Meghan Nicole Kradolfer - My work" />
+                            <img src="./images/clients/masterpiece.png" alt="Meghan Nicole Kradolfer - Front-end developer" />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-6">
+                            <img src="./images/clients/simonds.png" alt="Meghan Nicole Kradolfer - Front-end developer" />
+                        </div>
+                        <div className="col-6">
+                            <img src="./images/clients/springfox.png" alt="Meghan Nicole Kradolfer - Front-end developer" />
                         </div>
                     </div>
                 </div>

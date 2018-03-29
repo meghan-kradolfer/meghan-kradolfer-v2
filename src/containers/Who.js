@@ -10,7 +10,7 @@ class Who extends Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-5 overlay-img">
-							<img src="./images/meghan_kradolfer.png" alt="Meghan Nicole Kradolfer - About me" />
+							<img src="./images/meghan_kradolfer.png" alt="Meghan Nicole Kradolfer - Front-end developer" />
 						</div>
 						<div className="col-7">
 							<Fade><h5>Who am I?</h5></Fade>
