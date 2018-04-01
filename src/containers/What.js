@@ -11,40 +11,40 @@ class What extends Component {
 					<div className="row">
 						<div className="col-5">
 							<div className="row skill-icons">
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="html" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="javascript" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="css" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="react" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="python" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="wordpress" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="sass" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="angular" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="git" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="photoshop" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="illustrator" />
 								</div>
-								<div className="col-3">
+								<div className="col-4">
 									<Icon icon="indesign" />
 								</div>
 							</div>

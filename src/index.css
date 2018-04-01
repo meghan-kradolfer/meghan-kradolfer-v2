@@ -751,16 +751,13 @@ img {
   width: 100%;
   height: auto;
   opacity: 0.2;
-  padding: 0 2rem 4rem; }
+  padding: 0 1rem 2rem; }
   @media (max-width: 70rem) {
     .what .icon-svg svg {
-      padding: 1rem; } }
-  @media (max-width: 50rem) {
-    .what .icon-svg svg {
-      padding: 0; } }
+      padding: 0.5rem; } }
 
 @media (max-width: 50rem) {
-  .what .row .col-3 {
+  .what .row .col-4 {
     flex-basis: 16%; } }
 
 .where {
