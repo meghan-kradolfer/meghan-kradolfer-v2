@@ -25,22 +25,22 @@ class App extends Component {
 		return (
 			<div>
 				<Nav>
-					<Link className="nav-item" to="home" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('home')}>
+					<Link activeClass="active" className="nav-item" to="home" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('home')}>
 						Home
 					</Link>
-					<Link className="nav-item" to="who" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('who')}>
+					<Link activeClass="active" className="nav-item" to="who" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('who')}>
 						Who
 					</Link>
-					<Link className="nav-item" to="what" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('what')}>
+					<Link activeClass="active" className="nav-item" to="what" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('what')}>
 						What
 					</Link>
-					<Link className="nav-item" to="work" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('work')}>
+					<Link activeClass="active" className="nav-item" to="work" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('work')}>
 						Work
 					</Link>
-					<Link className="nav-item" to="where" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('where')}>
+					<Link activeClass="active" className="nav-item" to="where" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('where')}>
 						Where
 					</Link>
-					<Link className="nav-item" to="how" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('how')}>
+					<Link activeClass="active" className="nav-item" to="how" spy={true} smooth={true} duration={1000} onClick={() => this.onNavigate('how')}>
 						How
 					</Link>
 				</Nav>

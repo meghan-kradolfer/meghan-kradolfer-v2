@@ -32,7 +32,6 @@
             @include transition($time: 0.5s);
         }
         &.open {
-            fill: $gold;
             svg {
                 path:first-of-type {
                     transform: translateY(10px);
@@ -44,7 +43,7 @@
         }
     }
     .menu-nav {
-        @include transition();
+        @include transition($time: 0.5s);
         z-index: 9;
         position: fixed;
         top: 0;
@@ -60,6 +59,7 @@
             right: 0;
         }
         .nav-item {
+            @include transition($time: 0.2s);
             display: block;
             text-align: center;
             font-size: 1.5rem;
@@ -67,6 +67,9 @@
             margin: 0;
             line-height: 16.7vh;
             cursor: pointer;
+            &.active, &:hover {
+              color: $white;
+            }
         }
     }
 }

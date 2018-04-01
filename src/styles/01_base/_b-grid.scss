@@ -3,10 +3,10 @@
     margin: 0 auto;
     min-height: 100vh;
     max-width: 100vw;
+    width: 100%;
     padding: $spacing-lg 0;
     @media (max-width: $container-width-md) {
-        width: 100%;
-        padding: 0 $spacing;
+        padding: 4rem $spacing;
     }
     &.center {
         @include center();
