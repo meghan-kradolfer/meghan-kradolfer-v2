@@ -502,7 +502,7 @@ p {
   text-align: right; }
   @media (max-width: 50rem) {
     .text-right {
-      text-align: center; } }
+      text-align: left; } }
 
 .container {
   width: 70rem;
@@ -745,14 +745,21 @@ img {
 .who .col-7 {
   margin-top: 15rem; }
 
-.what .icon-svg {
+.what .icon-svg svg {
   width: 100%;
   height: auto;
   opacity: 0.2;
   padding: 0 2rem 4rem; }
+  @media (max-width: 70rem) {
+    .what .icon-svg svg {
+      padding: 1rem; } }
   @media (max-width: 50rem) {
-    .what .icon-svg {
-      padding: 0 2rem; } }
+    .what .icon-svg svg {
+      padding: 0.5rem; } }
+
+@media (max-width: 50rem) {
+  .what .row .col-3 {
+    flex-basis: 16%; } }
 
 .where {
   margin-top: 5rem; }

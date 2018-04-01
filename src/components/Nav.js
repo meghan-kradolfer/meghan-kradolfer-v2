@@ -31,8 +31,8 @@ class Nav extends React.Component {
                 <div className="logo-nav">
                     <Icon icon="logo" className="logo" />
                 </div>
-                <div className={`menu-nav ${this.state.toggle ? 'open' : 'close'}`}>
-                    {this.props.children}
+                <div className={`menu-nav ${this.state.toggle ? 'open' : 'close'}`} >
+                    {React.Children.map(this.props.children, child => React.cloneElement(child, {onClick: this.toggle}))}
                 </div>
                 <div className={`toggle ${this.state.toggle ? 'open' : 'close'}`} onClick={this.toggle}>
                     <Icon icon="menu" />

@@ -1,11 +1,20 @@
 .what {
-    .icon-svg {
+    .icon-svg svg {
         width: 100%;
         height: auto;
         opacity: 0.2;
         padding: 0 $spacing-lg 4rem;
+        @media (max-width: $container-width-md) {
+            padding: $spacing;
+        }
         @media (max-width: $container-width-sm) {
-            padding: 0 $spacing-lg;
+            padding: $spacing-sm;
+        }
+    }
+
+    .row .col-3 {
+        @media (max-width: $container-width-sm) {
+            flex-basis: 16%;
         }
     }
 }
