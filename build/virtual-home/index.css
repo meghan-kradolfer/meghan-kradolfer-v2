@@ -1,0 +1,191 @@
+/* line 1, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_type.scss */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* line 6, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_type.scss */
+p, em, li, a {
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0.5rem 0;
+}
+
+/* line 13, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_type.scss */
+h1, h2, h3, h4 {
+  color: #75B254;
+  margin: 10px 0;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+/* line 1, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 4, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map {
+  position: relative;
+}
+
+/* line 6, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map .floorplan-sections {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+@media (max-width: 1200px) {
+  /* line 6, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+  .floorplan #floorplan-map .floorplan-sections {
+    display: none;
+  }
+}
+
+/* line 15, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map .floorplan-sections polygon {
+  -webkit-transition: fill 0.5s ease;
+  -o-transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
+  fill: transparent;
+  cursor: pointer;
+  z-index: 99;
+}
+
+/* line 20, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map .floorplan-sections polygon:hover, .floorplan #floorplan-map .floorplan-sections polygon.active {
+  fill: RGBA(117, 178, 84, 0.6);
+}
+
+/* line 25, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map .floorplan-sections #area_4 {
+  display: none;
+}
+
+/* line 27, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map .floorplan-sections #area_4.active {
+  display: block !important;
+}
+
+/* line 33, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map #overlay {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  max-width: 350px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 4px 4px 23px 3px rgba(0, 0, 0, 0.19);
+}
+
+/* line 41, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map #overlay .overlay-close {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  background-color: RGBA(117, 178, 84);
+  color: RGB(242, 242, 242);
+  border-radius: 100%;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* line 51, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map #overlay .content {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-align: center;
+  color: RGBA(117, 178, 84, 0.9);
+  padding: 1rem;
+}
+
+/* line 56, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-map #overlay .content:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  /* line 33, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+  .floorplan #floorplan-map #overlay {
+    position: static;
+    max-width: 100%;
+  }
+}
+
+/* line 77, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 82, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-nav ul li {
+  transition: all .5s ease;
+  display: inline-block;
+  margin: 0;
+  margin-left: -2px;
+  list-style: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #333333;
+  border-bottom: 2px solid black;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* line 94, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-nav ul li:hover {
+  background-color: black;
+}
+
+/* line 97, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-nav ul li.active {
+  border-bottom: 2px solid #75B254;
+  background-color: black;
+}
+
+/* line 101, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-nav ul li:before {
+  display: none;
+}
+
+/* line 105, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+.floorplan #floorplan-nav ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 1200px) {
+  /* line 111, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+  .floorplan #floorplan-nav ul {
+    margin-left: 0;
+  }
+  /* line 114, /Users/meghankradolfer/Documents/my-stuff/virtual-home/styles/_floorplan.scss */
+  .floorplan #floorplan-nav ul li {
+    display: block;
+    border-right: 0;
+  }
+}
+
+/*# sourceMappingURL=../index.map */
