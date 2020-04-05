@@ -540,8 +540,8 @@ p {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
       flex: 0 0 auto;
-      padding-right: .5rem;
-      padding-left: .5rem; }
+      padding-right: 1.5rem;
+      padding-left: 1.5rem; }
     .container .row .col-12 {
       flex-basis: 100%; }
       @media (max-width: 50rem) {

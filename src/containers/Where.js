@@ -16,18 +16,33 @@ class Where extends Component {
 						</div>
 						<div className="col-7 timeline">
 							<Zoom>
-								<div className="item white">
+								<div className="item gold">
 									<div className="row">
 										<div className="col-6">
-											<p><strong>Amsterdam, Netherlands</strong></p>
-											<p>2017 - current</p>
+											<p><strong>Christchurch, New Zealand</strong></p>
+											<p>2018 - current</p>
 										</div>
 										<div className="col-6 text-right">
 											<p><strong>Front-end Developer</strong></p>
 										</div>
 										<hr />
 									</div>
-									<p>I am currently working as a Front-end Developer for Buzzcapture/Obi4wan. In this job I am part of a larger team of developers that work on an online software for brand monitoring. My role involves the implementation of new features and constantly updating the user experience of the software.</p>
+									<p>I am currently working as a Front-end Developer for hairyLemon Digital. This role involves working with a wide range of clients, implementing their sites ousing multiple different frameworks and CMS's.</p>
+								</div>
+							</Zoom>
+							<Zoom>
+								<div className="item white">
+									<div className="row">
+										<div className="col-6">
+											<p><strong>Amsterdam, Netherlands</strong></p>
+											<p>2017 - 2018</p>
+										</div>
+										<div className="col-6 text-right">
+											<p><strong>Front-end Developer</strong></p>
+										</div>
+										<hr />
+									</div>
+									<p>In this role I was part of a larger team of developers that worked on an online software for brand monitoring. My day-to-day tasks involved the implementation of new features, developing unit testing and updating the user experience of the software.</p>
 								</div>
 							</Zoom>
 							<Zoom>

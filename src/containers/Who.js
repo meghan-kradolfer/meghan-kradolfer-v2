@@ -9,9 +9,7 @@ class Who extends Component {
 			<div id="who" className="who">
 				<div className="container">
 					<div className="row">
-						<div className="col-5 overlay-img">
-							<img src="./images/meghan_kradolfer.png" alt="Meghan Nicole Kradolfer - Front-end developer" />
-						</div>
+						<div className="col-5"></div>
 						<div className="col-7">
 							<Fade><h5>Who am I?</h5></Fade>
 							<Fade><h1>About Me</h1></Fade>

@@ -24,7 +24,6 @@ class How extends Component {
                             <h1>Get in touch</h1>
                             <p>I am currently located in Christchurch, New Zealand <br /> but wherever you are in the world feel free to drop me a line.</p>
                             <p><a href="mailto: &#109;&#101;&#103;&#104;&#097;&#110;&#046;&#107;&#114;&#097;&#100;&#111;&#108;&#102;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;?subject=Enquiry from website">&#109;&#101;&#103;&#104;&#097;&#110;&#046;&#107;&#114;&#097;&#100;&#111;&#108;&#102;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
-                            <p>+64220499306</p>
                             <div className="social">
                                 <Zoom>
                                     <a href="https://www.facebook.com/meghan.kradolfer" target="_blank" rel="noopener noreferrer" onClick={() => this.onSocialLink('facebook')}>
